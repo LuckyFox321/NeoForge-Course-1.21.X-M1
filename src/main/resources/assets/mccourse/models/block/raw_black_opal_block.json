@@ -1,7 +1,6 @@
 {
-  "variants": {
-    "": {
-      "model": "mccourse:block/raw_black_opal_block"
-    }
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mccourse:block/raw_black_opal_block"
   }
 }

@@ -1,7 +1,3 @@
 {
-  "variants": {
-    "": {
-      "model": "mccourse:block/raw_black_opal_block"
-    }
-  }
+  "parent": "mccourse:block/raw_black_opal_block"
 }
