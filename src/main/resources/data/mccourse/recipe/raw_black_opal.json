@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mccourse:raw_black_opal_block"
+    }
+  ],
+
+  "result": {
+    "id": "mccourse:raw_black_opal",
+    "count": 9
+  }
+}
