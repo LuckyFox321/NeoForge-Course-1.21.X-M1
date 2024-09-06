@@ -1,6 +1,7 @@
 package net.luckyfox.mccourse.block;
 
 import net.luckyfox.mccourse.MCCourseMod;
+import net.luckyfox.mccourse.block.custom.MagicBlock;
 import net.luckyfox.mccourse.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -35,6 +36,9 @@ public class ModBlocks {
         public static final DeferredBlock<Block> BLACK_OPAL_END_ORE = registerBlock("black_opal_end_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 8),
                     BlockBehaviour.Properties.of().strength(8f).requiresCorrectToolForDrops()));
+        public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
 
 
 
