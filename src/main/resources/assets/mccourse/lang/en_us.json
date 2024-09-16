@@ -16,6 +16,11 @@
 
   "block.mccourse.black_opal_block": "Block of Black Opal",
   "block.mccourse.raw_black_opal_block": "Block of Raw Black Opal",
+  "block.mccourse.black_opal_stairs": "Black Opal Stairs",
+  "block.mccourse.black_opal_slab": "Black Opal Slab",
+
+  "block.mccourse.black_opal_pressure_plate": "Black Opal Pressure Plate",
+  "block.mccourse.black_opal_button": "Black Opal Button",
 
 
   "block.mccourse.magic_block": "Magic Block",

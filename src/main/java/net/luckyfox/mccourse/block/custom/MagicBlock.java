@@ -1,6 +1,7 @@
 package net.luckyfox.mccourse.block.custom;
 
 import net.luckyfox.mccourse.item.ModItems;
+import net.luckyfox.mccourse.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -28,7 +29,7 @@ public class MagicBlock extends Block {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
                                                Player player, BlockHitResult hitResult) {
-        level.playSound(player, pos, SoundEvents.APPLY_EFFECT_TRIAL_OMEN, SoundSource.BLOCKS, 1f, 1f);
+        level.playSound(player, pos, SoundEvents.WARDEN_SONIC_BOOM, SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
     }
 
@@ -44,8 +45,7 @@ public class MagicBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.getItem() == ModItems.BLACK_OPAL.get()
-                || item.getItem() == Items.COAL || item.getItem() == Items.DANGER_POTTERY_SHERD;
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
