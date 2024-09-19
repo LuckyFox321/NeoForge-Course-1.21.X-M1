@@ -36,11 +36,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(((FenceBlock) ModBlocks.BLACK_OPAL_FENCE.get()), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.BLACK_OPAL_FENCE_GATE.get()), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
         wallBlock((((WallBlock) ModBlocks.BLACK_OPAL_WALL.get())), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.BLACK_OPAL_DOOR.get()),
+                modLoc("block/black_opal_door_bottom"), modLoc("block/black_opal_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.BLACK_OPAL_TRAPDOOR.get()),
+                modLoc("block/black_opal_trapdoor"), true, "cutout");
 
         blockItem(ModBlocks.BLACK_OPAL_STAIRS);
         blockItem(ModBlocks.BLACK_OPAL_SLAB);
         blockItem(ModBlocks.BLACK_OPAL_PRESSURE_PLATE);
         blockItem(ModBlocks.BLACK_OPAL_FENCE_GATE);
+
+        blockItem(ModBlocks.BLACK_OPAL_TRAPDOOR, "_bottom");
 
     }
 
@@ -50,5 +56,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<Block> deferredBlock) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("mccourse:block/" + deferredBlock.getId().getPath()));
+    }
+
+    private void blockItem(DeferredBlock<Block> deferredBlock, String appendix) {
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("mccourse:block/" + deferredBlock.getId().getPath() + appendix));
     }
 }
