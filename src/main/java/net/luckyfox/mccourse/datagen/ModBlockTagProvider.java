@@ -2,6 +2,7 @@ package net.luckyfox.mccourse.datagen;
 
 import net.luckyfox.mccourse.MCCourseMod;
 import net.luckyfox.mccourse.block.ModBlocks;
+import net.luckyfox.mccourse.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -40,6 +41,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FENCES).add(ModBlocks.BLACK_OPAL_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.BLACK_OPAL_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.BLACK_OPAL_WALL.get());
+
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
 
     }
 }

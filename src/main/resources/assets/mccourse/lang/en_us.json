@@ -13,6 +13,14 @@
   "tooltip.mccourse.magic_block.tooltip": "This block is §dmagical§r, you should try to find out why...",
   "tooltip.mccourse.tomato.tooltip": "Tomatoes taste really good, so it gives you §6absorption§r!",
 
+  "item.mccourse.black_opal_sword": "Black Opal Sword",
+  "item.mccourse.black_opal_pickaxe": "Black Opal Pickaxe",
+  "item.mccourse.black_opal_shovel": "Black Opal Shovel",
+  "item.mccourse.black_opal_axe": "Black Opal Axe",
+  "item.mccourse.black_opal_hoe": "Black Opal Hoe",
+
+  "item.mccourse.black_opal_paxel": "Black Opal Paxel",
+  "item.mccourse.black_opal_hammer": "Black Opal Hammer",
 
   "block.mccourse.black_opal_block": "Block of Black Opal",
   "block.mccourse.raw_black_opal_block": "Block of Raw Black Opal",

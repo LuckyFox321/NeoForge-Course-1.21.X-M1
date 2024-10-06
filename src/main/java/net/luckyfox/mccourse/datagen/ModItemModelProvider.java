@@ -5,10 +5,13 @@ import net.luckyfox.mccourse.block.ModBlocks;
 import net.luckyfox.mccourse.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -29,6 +32,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.BLACK_OPAL_DOOR.asItem());
 
+        handheldItem(ModItems.BLACK_OPAL_SWORD);
+        handheldItem(ModItems.BLACK_OPAL_PICKAXE);
+        handheldItem(ModItems.BLACK_OPAL_SHOVEL);
+        handheldItem(ModItems.BLACK_OPAL_AXE);
+        handheldItem(ModItems.BLACK_OPAL_HOE);
+
+        handheldItem(ModItems.BLACK_OPAL_PAXEL);
+        handheldItem(ModItems.BLACK_OPAL_HAMMER);
+
+
     }
 
     public void buttonItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock) {
@@ -47,5 +60,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", ResourceLocation.fromNamespaceAndPath(MCCourseMod.MOD_ID,
                         "block/" + baseBlock.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(DeferredItem<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/handheld")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(MCCourseMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 }
