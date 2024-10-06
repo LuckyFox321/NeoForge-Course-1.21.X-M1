@@ -7,6 +7,7 @@ import net.minecraft.advancements.Criterion;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
@@ -37,6 +38,74 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
                 .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
                 .unlockedBy("has_black_opal_block", has(ModBlocks.BLACK_OPAL_BLOCK)).save(recipeOutput);
+
+ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_BLACK_OPAL_BLOCK.get(), 1)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_BLACK_OPAL.get())
+                .unlockedBy("has_raw_black_opal", has(ModItems.RAW_BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_BLACK_OPAL.get(), 9)
+                .requires(ModBlocks.RAW_BLACK_OPAL_BLOCK.get())
+                .unlockedBy("has_raw_black_opal_block", has(ModBlocks.RAW_BLACK_OPAL_BLOCK)).save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_SWORD.get(), 1)
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .define('A', ModItems.BLACK_OPAL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_PICKAXE.get(), 1)
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.BLACK_OPAL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_AXE.get(), 1)
+                .pattern("AA ")
+                .pattern("AB ")
+                .pattern(" B ")
+                .define('A', ModItems.BLACK_OPAL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_HOE.get(), 1)
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', ModItems.BLACK_OPAL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_SHOVEL.get(), 1)
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
+                .define('A', ModItems.BLACK_OPAL.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_PAXEL.get(), 1)
+                .pattern("ABC")
+                .define('A', ModItems.BLACK_OPAL_AXE.get())
+                .define('B', ModItems.BLACK_OPAL_SHOVEL.get())
+                .define('C', ModItems.BLACK_OPAL_PICKAXE.get())
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLACK_OPAL_HAMMER.get(), 1)
+                .pattern("AAA")
+                .pattern(" B ")
+                .define('A', ModBlocks.BLACK_OPAL_BLOCK.get())
+                .define('B', ModItems.BLACK_OPAL_PICKAXE.get())
+                .unlockedBy("has_black_opal", has(ModItems.BLACK_OPAL.get())).save(recipeOutput);
+
+
 
 
         oreSmelting(recipeOutput, BLACK_OPAL_SMELTABLES, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 200, "black_opal");

@@ -1,11 +1,9 @@
 package net.luckyfox.mccourse.item;
 
 import net.luckyfox.mccourse.MCCourseMod;
-import net.luckyfox.mccourse.item.custom.ChainsawItem;
-import net.luckyfox.mccourse.item.custom.FuelItem;
-import net.luckyfox.mccourse.item.custom.HammerItem;
-import net.luckyfox.mccourse.item.custom.PaxelItem;
+import net.luckyfox.mccourse.item.custom.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -34,8 +32,8 @@ public class ModItems {
             ITEMS.registerItem("frostfire_ice", properties -> new FuelItem(properties, 800), new Item.Properties());
 
     public static final DeferredItem<Item> BLACK_OPAL_SWORD = ITEMS.register("black_opal_sword",
-            () -> new SwordItem(ModToolTiers.BLACK_OPAL,
-                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.BLACK_OPAL, 3, -2.4f))));
+            () -> new ModEffectSwordItem(ModToolTiers.BLACK_OPAL,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.BLACK_OPAL, 3, -2.4f)), MobEffects.LEVITATION));
     public static final DeferredItem<Item> BLACK_OPAL_PICKAXE = ITEMS.register("black_opal_pickaxe",
             () -> new PickaxeItem(ModToolTiers.BLACK_OPAL,
                     new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.BLACK_OPAL, 1, -2.8f))));
