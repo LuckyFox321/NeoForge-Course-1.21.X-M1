@@ -41,6 +41,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BLACK_OPAL_PAXEL);
                         pOutput.accept(ModItems.BLACK_OPAL_HAMMER);
 
+                        pOutput.accept(ModItems.BLACK_OPAL_HELMET);
+                        pOutput.accept(ModItems.BLACK_OPAL_CHESTPLATE);
+                        pOutput.accept(ModItems.BLACK_OPAL_LEGGINGS);
+                        pOutput.accept(ModItems.BLACK_OPAL_BOOTS);
+
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> BLACK_OPAL_BLOCKS_TAB =
@@ -71,12 +77,6 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.BLACK_OPAL_DOOR);
                         pOutput.accept(ModBlocks.BLACK_OPAL_TRAPDOOR);
-
-                        pOutput.accept(ModItems.BLACK_OPAL_HELMET);
-                        pOutput.accept(ModItems.BLACK_OPAL_CHESTPLATE);
-                        pOutput.accept(ModItems.BLACK_OPAL_LEGGINGS);
-                        pOutput.accept(ModItems.BLACK_OPAL_BOOTS);
-
                     }).build());
 
 
