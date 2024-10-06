@@ -1,8 +1,10 @@
 package net.luckyfox.mccourse;
 
 import net.luckyfox.mccourse.block.ModBlocks;
+import net.luckyfox.mccourse.item.ModArmorMaterials;
 import net.luckyfox.mccourse.item.ModCreativeModeTabs;
 import net.luckyfox.mccourse.item.ModItems;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.EventBus;
 import org.slf4j.Logger;
@@ -43,6 +45,8 @@ public class MCCourseMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModArmorMaterials.register(modEventBus);
 
 
         // Register ourselves for server and other game events we are interested in.
