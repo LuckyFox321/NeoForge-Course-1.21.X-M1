@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-06T16:18:25.3019658	Recipes
+// 1.21.1	2024-12-02T18:17:15.7529926	Recipes
 4958be86dc8ededa248e438f8ec77757340342d3 data/mccourse/advancement/recipes/building_blocks/black_opal_slab.json
 3a3b666387507279530912650089b8a21a8b6df6 data/mccourse/advancement/recipes/building_blocks/black_opal_stairs.json
 0b26e27c06143f06f353dc4e8bcf0a7803b1892f data/mccourse/advancement/recipes/building_blocks/black_opal_wall.json
@@ -26,6 +26,7 @@ a8de891d8865e71cb6d1e9f78131a9cee5a8f63f data/mccourse/advancement/recipes/misc/
 a6c30b820a9843a6a5d0a569e9de6b960227baa2 data/mccourse/advancement/recipes/misc/black_opal_pickaxe.json
 d806aced27d4edd03ce288bde4b9d28b0a6bd336 data/mccourse/advancement/recipes/misc/black_opal_shovel.json
 dea6f1bfc8686448597c8b6b7fcbdd73fd583778 data/mccourse/advancement/recipes/misc/black_opal_sword.json
+d3391c9fa573002953776b7f4f1d5dcf5a4ef4f4 data/mccourse/advancement/recipes/misc/kaupen.json
 cc5289fd612f71d705af063c7ce60b3a3d2a617e data/mccourse/advancement/recipes/misc/raw_black_opal.json
 2a109f2d426ad60dd62d12b2e441151340ae1b71 data/mccourse/advancement/recipes/misc/raw_black_opal_block.json
 d65c898403365972e18e6ffd6c763697b85ca178 data/mccourse/advancement/recipes/redstone/black_opal_button.json
@@ -65,5 +66,6 @@ b55618e3a2a25d8654d62d057f90a4f457b5ba61 data/mccourse/recipe/black_opal_slab.js
 1cb9fdc4ba46ecd7501fd641c2eae23ff6988d95 data/mccourse/recipe/black_opal_sword.json
 74230f8dc22c723e4066a606aee6aef443004b37 data/mccourse/recipe/black_opal_trapdoor.json
 99943c4531f273a8f3eb6284bc5048450d10ad94 data/mccourse/recipe/black_opal_wall.json
+20ded92d79c4756f3854b8ddd36861f7ba9a217a data/mccourse/recipe/kaupen.json
 5a46a87678f989d5aac8defecaf30d5e4d7deebf data/mccourse/recipe/raw_black_opal.json
 f72c44ec7db3f56bdf972a2aba268af00c3d1568 data/mccourse/recipe/raw_black_opal_block.json

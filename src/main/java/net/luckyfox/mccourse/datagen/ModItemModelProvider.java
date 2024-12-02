@@ -63,11 +63,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.BLACK_OPAL_PAXEL);
         handheldItem(ModItems.BLACK_OPAL_HAMMER);
 
-
         trimmedArmorItem(ModItems.BLACK_OPAL_HELMET);
         trimmedArmorItem(ModItems.BLACK_OPAL_CHESTPLATE);
         trimmedArmorItem(ModItems.BLACK_OPAL_LEGGINGS);
         trimmedArmorItem(ModItems.BLACK_OPAL_BOOTS);
+
+        basicItem(ModItems.BLACK_OPAL_HORSE_ARMOR.get());
+        basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
 
 
     }
