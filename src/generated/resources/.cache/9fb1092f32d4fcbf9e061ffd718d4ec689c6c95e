@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-02T18:17:15.7529926	Recipes
+// 1.21.1	2024-12-03T16:04:21.7514908	Recipes
 4958be86dc8ededa248e438f8ec77757340342d3 data/mccourse/advancement/recipes/building_blocks/black_opal_slab.json
 3a3b666387507279530912650089b8a21a8b6df6 data/mccourse/advancement/recipes/building_blocks/black_opal_stairs.json
 0b26e27c06143f06f353dc4e8bcf0a7803b1892f data/mccourse/advancement/recipes/building_blocks/black_opal_wall.json
@@ -21,6 +21,7 @@ a8de891d8865e71cb6d1e9f78131a9cee5a8f63f data/mccourse/advancement/recipes/misc/
 3f6baeaabce931b50f98ddec0519cd467719274d data/mccourse/advancement/recipes/misc/black_opal_hammer.json
 2a6cafcf11b0cc97e9dbe8facf0d8372c12f3007 data/mccourse/advancement/recipes/misc/black_opal_helmet.json
 490935305983b60ad8010bf035d8b7a587733e3e data/mccourse/advancement/recipes/misc/black_opal_hoe.json
+cfcbaaf7bfba2785659ff04a9c5f96ea58fbfa48 data/mccourse/advancement/recipes/misc/black_opal_lamp.json
 10d97838895b13fc127ca2dda45b6d2579de9d4e data/mccourse/advancement/recipes/misc/black_opal_leggings.json
 95e57519eb45180567d83cc5ea53404950f60b13 data/mccourse/advancement/recipes/misc/black_opal_paxel.json
 a6c30b820a9843a6a5d0a569e9de6b960227baa2 data/mccourse/advancement/recipes/misc/black_opal_pickaxe.json
@@ -56,6 +57,7 @@ c6886878b2826d0e270effa60e951c41d29b2104 data/mccourse/recipe/black_opal_from_sm
 6739c60826a127628acaf7fc8fd9374f2c6b85bc data/mccourse/recipe/black_opal_hammer.json
 9f82845407f2457046ae84ab94a949fce83a298f data/mccourse/recipe/black_opal_helmet.json
 1bb1750f5c703df3f61315300bf85735631d7c4b data/mccourse/recipe/black_opal_hoe.json
+faa56e37141125d66b0de1ab4cb5b628dce991d0 data/mccourse/recipe/black_opal_lamp.json
 039b224dc4b847da03c2c58b11b3f579fc79b6b0 data/mccourse/recipe/black_opal_leggings.json
 201d16d0607a300f44957ee20c41c75ca7fb514d data/mccourse/recipe/black_opal_paxel.json
 9502d1159228231af03447a9066f36b1bbd97572 data/mccourse/recipe/black_opal_pickaxe.json
